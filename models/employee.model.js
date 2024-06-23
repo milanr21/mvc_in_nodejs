@@ -15,7 +15,13 @@ const employeeSchema = mongoose.Schema({
     required: true,
     unique: true,
   },
-  phone: {
+  password: {
+    type: String,
+    required: true,
+    min: [8, 'Password must be at least 8 characters'],
+  },
+
+  phoneNo: {
     type: String,
     required: true,
     unique: true,
