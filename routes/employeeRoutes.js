@@ -13,7 +13,7 @@ employeeRoutes.use(bodyParser.json());
 employeeRoutes.use(bodyParser.urlencoded({ extended: true }));
 
 employeeRoutes.get('/register', (req, res) => {
-  res.render('Register your data');
+  res.render('register');
 });
 
 employeeRoutes.get('/', (req, res) => {
